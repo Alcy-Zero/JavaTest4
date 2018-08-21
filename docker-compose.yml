@@ -27,6 +27,7 @@ services:
        USERNAME: root
        MYSQL_ROOT_PASSWORD: 123456
        DBNAME: sakila
+
        TITLE: Moon
        DESCRIPTION: A quiet movie
        LANGUAGE_ID: 1

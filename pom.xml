@@ -157,9 +157,9 @@
             <version>3.4.1</version>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>com.microsoft.sqlserver</groupId>-->
-            <!--<artifactId>sqljdbc4</artifactId>-->
-            <!--<version>3.9</version>-->
+        <!--<groupId>com.microsoft.sqlserver</groupId>-->
+        <!--<artifactId>sqljdbc4</artifactId>-->
+        <!--<version>3.9</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>commons-dbcp</groupId>
@@ -208,8 +208,6 @@
         <finalName>JavaTest4</finalName><!--jar文件的名字-->
 
     </build>
-
-
 
 
 </project>

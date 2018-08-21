@@ -1,0 +1,5 @@
+com\hand\Film.class
+com\hand\FilmMapper.class
+com\hand\CStartEventHandler.class
+com\hand\CStopEventHandler.class
+com\hand\MainApp.class

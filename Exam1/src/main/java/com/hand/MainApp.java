@@ -12,6 +12,7 @@ import java.io.Reader;
 public class MainApp {
     private static SqlSessionFactory sqlSessionFactory;
     private static Reader reader;
+
     static {
         try {
             reader = Resources.getResourceAsReader("applicationContext-mybatis.xml");
@@ -56,15 +57,15 @@ public class MainApp {
             film.setLanguage_id(language_id);
             film.setTitle(title);
             film.setDescription(description);
-            System.out.println("Film Title:"+film.getTitle());
-            System.out.println("Film Description:"+film.getDescription());
-            System.out.println("Film LanguageId:"+film.getLanguage_id());
+            System.out.println("Film Title:\n" + film.getTitle());
+            System.out.println("Film Description:\n" + film.getDescription());
+            System.out.println("Film LanguageId:\n" + film.getLanguage_id());
             int result = session.insert("com.hand.FilmMapper.insertFilm", film);
             session.commit();
             if (result > 0) {
-                System.out.println("---------insert success....---------");
+                System.out.println("---------Insert Success....---------");
             } else {
-                System.out.println("---------insert error....---------");
+                System.out.println("---------Insert Error....---------");
             }
 
             ((ClassPathXmlApplicationContext) acx).stop();
